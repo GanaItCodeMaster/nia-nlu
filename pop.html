@@ -1,0 +1,26 @@
+<!-- <input type="button" value="Open popup" onclick="window.open(src, 'newWin, "width="+screen.availWidth+",height="+screen.availHeight)/>"
+ -->
+ <html>
+        <script language="JavaScript">
+                function Full_W_P(url) {
+                 params  = 'width='+screen.width;
+                 params += ', height='+screen.height;
+                 params += ', top=0, left=0'
+                 params += ', fullscreen=yes';
+                 params += ', directories=no';
+                 params += ', location=no';
+                 params += ', menubar=no';
+                 params += ', resizable=no';
+                 params += ', scrollbars=no';
+                 params += ', status=no';
+                 params += ', toolbar=no';
+                
+                
+                 newwin=window.open(url,'FullWindowAll', params);
+                 if (window.focus) {newwin.focus()}
+                 return false;
+                }
+                </script>
+                
+                <input type="button" value="Open as Full Window PopUp" onclick="javascript:Full_W_P('http://www.YourLink.com');"></input>
+</html>
